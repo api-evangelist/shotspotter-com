@@ -1,25 +1,79 @@
 aid: shotspotter-com
+
 name: Shotspotter
-description: 'Shotspotter is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by norwest-venture-partners) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cms.soundthinking.com/api/media/file/st-open-graph-homepage-1200x630.webp?v=2026-07-18T14%3A14%3A45.922Z
+
+description: 'Shotspotter provides AI‑driven public safety solutions that combine acoustic detection technology with strategic advisory services to help cities and agencies detect, locate, and respond to gunfire incidents in real time. Their platform delivers operational intelligence, situational awareness, and actionable insights to improve investigations and protect communities.'
+
 url: https://raw.githubusercontent.com/api-evangelist/shotspotter-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Public Safety
+- AI
+- Acoustic Detection
+- Real-time Alerts
+- Community Safety
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- norwest-venture-partners
+
 common:
+- type: Hosts
+  url: hosts/shotspotter-com-hosts.yml
+- type: Support
+  url: https://www.soundthinking.com/contact/support-and-training/support/
+- type: StatusPage
+  url: https://status.shotspotter.com/login?redirect=/
+- type: Security
+  url: https://www.soundthinking.com/security/safepointe
+- type: PrivacyPolicy
+  url: https://www.soundthinking.com/privacy-policy
+- type: Newsroom
+  url: https://cms.soundthinking.com/api/media/file/SoundThinking-Launch-External-QA-FINAL.pdf?v=2026-06-28T14%3A19%3A03.064Z
+- type: Blog
+  url: https://www.soundthinking.com/blog
+- type: DomainSecurity
+  url: security/shotspotter-com-domain-security.yml
 - type: Website
   url: https://shotspotter.com
+
+apis: []
+
+x-backed-by:
+- norwest-venture-partners
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://shotspotter.com
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

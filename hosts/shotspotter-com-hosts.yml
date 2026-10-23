@@ -1,0 +1,85 @@
+generated: '2026-10-23'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 3
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - other
+  - status
+  - support
+  - website
+hosts:
+- host: api.shotspotter.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: shotspotter.com
+  role: api
+  relation: own
+- host: api.soundthinking.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: soundthinking.com
+  role: api
+  relation: other-domain
+- host: cms.soundthinking.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Newsroom
+  serves: []
+  registrable_domain: soundthinking.com
+  role: other
+  relation: other-domain
+- host: shotspotter.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: shotspotter.com
+  role: website
+  relation: own
+- host: status.shotspotter.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: shotspotter.com
+  role: status
+  relation: own
+- host: www.soundthinking.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  - Security
+  - PrivacyPolicy
+  - Blog
+  serves: []
+  registrable_domain: soundthinking.com
+  role: support
+  relation: other-domain

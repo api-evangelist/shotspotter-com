@@ -1,0 +1,20 @@
+generated: '2026-10-23'
+method: none
+source:
+- https://zapier.com/apps/shotspotter-com/integrations
+- https://zapier.com/apps/shotspotter/integrations
+- https://n8n.io/integrations/shotspotter-com/
+- https://n8n.io/integrations/shotspotter/
+- https://composio.dev/toolkits/shotspotter-com
+- https://monid.ai/tools/shotspotter-com
+checked:
+- https://composio.dev/toolkits/shotspotter-com
+- https://monid.ai/tools/shotspotter-com
+- https://n8n.io/integrations/shotspotter-com/
+- https://n8n.io/integrations/shotspotter/
+- https://zapier.com/apps/shotspotter-com/integrations
+- https://zapier.com/apps/shotspotter/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
